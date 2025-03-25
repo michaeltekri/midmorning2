@@ -5,16 +5,24 @@ fun main() {
     var read = Scanner(System.`in`)
     println("Enter number:")
 
-    var d= read.nextInt()
-    println("$d is first number")
-    var a= read.nextInt()
-    println("$a is first number")
-    var c= read.nextInt()
-    println("$c is first number")
+    var first= read.nextInt()
+    println("$first is first number")
+    var second= read.nextInt()
+    println("$second is second number")
+    var third= read.nextInt()
+    println("$third is third number")
 
-    var max= listOf(d,a,c).max()
-    println("$max is greatest number")
 
+
+    if (first>second && first>third){
+        println("$first is the largest number")
+    }
+    else if (second>first && second>third){
+        println("$second is the largest number")
+    }
+    else{
+        println("$third is the largest number")
+    }
 
 
 
