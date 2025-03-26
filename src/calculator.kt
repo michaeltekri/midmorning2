@@ -12,8 +12,8 @@ fun main() {
 
     var result=when(assign){
         "+"->c+f
-        "-"->c-f
         "/"->c/f
+        "-"->c-f
         "*"->c*f
         "%"->c%f
         else ->"Invalid operator"
